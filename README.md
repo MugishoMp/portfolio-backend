@@ -1,34 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mugisho Mpozi Backend
+
+This repository contains the backend code for the frontend site [mugishompozi.com](https://mugishompozi.com/).
+
+## Overview
+
+- **Frontend**: The frontend of the portfolio website is hosted separately and is responsible for the user interface, presentation, and client-side functionality.
+
+- **Backend**: The backend serves as the API for the portfolio website, handling tasks such as data retrieval, form submissions, and other server-side operations.
+
+## About Mugisho Mpozi
+
+Mugisho Mpozi is a software developer, and this portfolio website showcases his projects, skills, and experiences.
+
+## Technologies Used
+
+The backend of this project is built using various technologies and libraries, including:
+
+- **Node.js**: A JavaScript runtime for building server-side applications.
+
+- **Express.js**: A popular Node.js framework used for creating APIs and web applications.
+
+- **@types/node**: TypeScript type definitions for Node.js.
+
+- **@types/react**: TypeScript type definitions for React.
+
+- **@types/react-dom**: TypeScript type definitions for ReactDOM.
+
+- **eslint**: A popular JavaScript linter for maintaining code quality.
+
+- **eslint-config-next**: ESLint configuration specifically tailored for Next.js projects.
+
+- **next**: A React framework for building server-rendered React applications.
+
+- **react**: The React library for building user interfaces.
+
+- **react-dom**: The ReactDOM library for rendering React components in the browser.
+
+- **typescript**: A strongly typed superset of JavaScript, used for type-checking and improving code quality.
+
+These technologies and libraries contribute to the development of a robust and efficient backend for the portfolio website.
+
 
 ## Getting Started
 
-First, run the development server:
+<!-- If you would like to set up the backend locally or contribute to this project, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Clone this repository to your local machine.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. [Insert any additional setup instructions here, such as installing dependencies and configuring environment variables.]
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Start the backend server.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. [Insert any additional steps needed for local development or contributions.] -->
 
-## Learn More
+## API Endpoints
 
-To learn more about Next.js, take a look at the following resources:
+- `/api/endpoint1`: [Description of what this endpoint does]
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `/api/endpoint2`: [Description of what this endpoint does]
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[Add more details about your API endpoints and their usage if necessary.]
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contact
+
+If you have any questions or feedback, feel free to contact Mugisho Mpozi at [insert email address or contact information here].
+
+[Insert any other contact details or links to social media profiles if desired.]
+

@@ -9,6 +9,7 @@
 //  A simple GET Example
 
 import { NextRequest, NextResponse } from 'next/server';
+import path from 'path';
 import fs from 'fs';
 
 export async function GET(request:NextRequest, { params }: { params: { version: string } }) {
@@ -17,7 +18,7 @@ export async function GET(request:NextRequest, { params }: { params: { version: 
   const fileName = `resume-${version}.pdf`;
 
   // Path to the PDF file
-  const filePath = `public/files/pdf/resume/${fileName}`;
+  const filePath = path.join(process.cwd(), `public/files/pdf/resume/${fileName}`);
 
   try {
     // Read the file

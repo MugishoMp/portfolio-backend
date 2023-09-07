@@ -7,9 +7,9 @@
 // export async function DELETE(Request) {}
 //  A simple GET Example
 
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from 'next/server';
 
-export async function GET(request) {
-    // we will use params to access the data passed to the dynamic route
-    return new NextResponse('This is an api endpoint to retrieve all resumes');
-  }
+export async function GET(_request:NextRequest) {
+  // we will use params to access the data passed to the dynamic route
+  return new NextResponse('This is an api endpoint to retrieve all resumes');
+}

@@ -8,11 +8,34 @@
 // export async function DELETE(Request) {}
 //  A simple GET Example
 
-import { NextResponse } from "next/server";
+import { NextResponse } from 'next/server';
+import fs from 'fs';
 
-export async function GET(request, { params }) {
+export async function GET(request:Request, { params }: { params: { version: string } }) {
   // we will use params to access the data passed to the dynamic route
-  const version = params.version;
+  const { version } = params;
   const fileName = `resume-${version}.pdf`;
-  return new NextResponse(fileName);
+
+  // Path to the PDF file
+  const filePath = `public/files/pdf/resume/${fileName}`;
+
+  try {
+    // Read the file
+    const fileContent = fs.readFileSync(filePath);
+
+    // Set the headers to force download
+    const headers = {
+      'Content-Disposition': `attachment; filename=${fileName}`,
+      'Content-Type': 'application/pdf',
+    };
+
+    return new NextResponse(fileContent, {
+      status: 200,
+      headers,
+    });
+  } catch (error) {
+    // Handle error (e.g., file not found)
+    console.error(error);
+    return new NextResponse('File not found', { status: 404 });
+  }
 }
